@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 
 const calculaX = (m: number, n: number) => {
   if (m < n) {
-    return m+1/m * calculaX(m+1, n)
+    return (m+1/m) * calculaX(m+1, n)
   } else {
     return n+1/n
   }
